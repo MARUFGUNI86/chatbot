@@ -104,21 +104,27 @@ h1 {
 
     <div class="team">
         <div class="member">
-            <img src="https://i.pravatar.cc/150?img=10" alt="Team Member">
-            <h3>John Doe</h3>
+            <img src="https://i.pravatar.cc/150?img=10" alt="Maruf">
+            <h3>Maruf</h3>
             <p>Founder & Lead Developer</p>
         </div>
 
         <div class="member">
-            <img src="https://i.pravatar.cc/150?img=12" alt="Team Member">
-            <h3>Jane Smith</h3>
+            <img src="https://i.pravatar.cc/150?img=12" alt="Dhvanit">
+            <h3>Dhvanit</h3>
             <p>UI/UX Designer</p>
         </div>
 
         <div class="member">
-            <img src="https://i.pravatar.cc/150?img=15" alt="Team Member">
-            <h3>Michael Brown</h3>
+            <img src="https://i.pravatar.cc/150?img=15" alt="Arya Banko">
+            <h3>Arya Banko 🥵🥵🥵🥵</h3>
             <p>AI Engineer</p>
+        </div>
+
+        <div class="member">
+            <img src="https://i.pravatar.cc/150?img=18" alt="Mehul">
+            <h3>Mehul</h3>
+            <p>Backend Developer</p>
         </div>
     </div>
 </div>
