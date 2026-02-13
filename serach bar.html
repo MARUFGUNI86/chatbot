@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Search Bar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #f4f4f4;
+    }
+    .search-container {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .results {
+      margin-top: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Type to search...">
+  <button onclick="performSearch()">Search</button>
+</div>
+
+<div class="results" id="results"></div>
+
+<script>
+  const data = [
+    "GitHub",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React",
+    "Node.js",
+    "Python",
+    "Machine Learning"
+  ];
+
+  function performSearch() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const resultsDiv = document.getElementById('results');
+
+    const filtered = data.filter(item => item.toLowerCase().includes(input));
+
+    if (filtered.length > 0) {
+      resultsDiv.innerHTML = filtered.map(item => `<p>${item}</p>`).join('');
+    } else {
+      resultsDiv.innerHTML = "<p>No results found</p>";
+    }
+  }
+</script>
+
+</body>
+</html>
